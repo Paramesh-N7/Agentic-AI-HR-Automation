@@ -90,7 +90,7 @@ def create_calendar_invite(title, attendee_emails):
     calendar_service.events().insert(
         calendarId="primary",
         body=event,
-        sendUpdates="all"   # ⭐ THIS IS THE FIX
+        sendUpdates="all"
     ).execute()
 
 
