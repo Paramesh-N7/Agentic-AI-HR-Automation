@@ -134,7 +134,7 @@ def approve_onboarding(
     employee_name: str,
     manager_email: str
 ):
-    # ⚠️ In real product, fetch details from DB
+    # In real product, fetch details from DB
     # For now, we simulate using manager email as attendee
 
     create_calendar_invite(
