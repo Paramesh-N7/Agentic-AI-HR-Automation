@@ -135,12 +135,12 @@ class HROnboardingAgent:
     # RUN: Agent lifecycle
     # -------------------------
     def run(self):
-        print("\n🧠 HR Agent reasoning...\n")
+        print("\n HR Agent reasoning...\n")
 
         plan = self.think()
 
         for step in plan:
-            print(f"➡️ HR Agent chose action: {step}")
+            print(f" HR Agent chose action: {step}")
             result = self.act(step)
 
             if result and result.get("status") == "pending_approval":
@@ -150,4 +150,4 @@ class HROnboardingAgent:
             else:
                 self.memory.append(step)
 
-        print("\n🧾 Agent Memory:", self.memory)
+        print("\n Agent Memory:", self.memory)
