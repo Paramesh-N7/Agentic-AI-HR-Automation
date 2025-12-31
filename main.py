@@ -4,9 +4,9 @@ from agent import HROnboardingAgent
 
 
 employee_data = {
-    "name": "Shamini",
-    "email": "shamini@company.com",
-    "manager": "Paramesh"
+    "name": "employee",
+    "email": "employee@company.com",
+    "manager": "manager"
 }
 
 agent = HROnboardingAgent(employee_data)
@@ -23,5 +23,5 @@ learning_profile = {
 coach = LearningCoachAgent(learning_profile)
 plan = coach.generate_learning_plan()
 
-print("\n📚 LEARNING PLAN\n")
+print("\n LEARNING PLAN\n")
 print(plan)
