@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Welcome to Agentic AI Dashboard</h2>
+<a href="/logout">Logout</a>
+
+<hr>
+
+<h3>HR Onboarding</h3>
+<form method="post" action="/onboard-ui">
+    <input name="name" placeholder="Employee Name" required><br>
+    <input name="email" placeholder="Employee Email" required><br>
+
+    <input name="manager_name" placeholder="Manager Name" required><br>
+    <input name="manager_email" placeholder="Manager Email" required><br>
+
+    <button type="submit">Run Onboarding</button>
+</form>
+
+
+<hr>
+
+<h3>L&D Learning Coach</h3>
+<form method="post" action="/learning-ui">
+    <input name="role" placeholder="Role" required><br>
+    <textarea name="current_skills" placeholder="Current Skills"></textarea><br>
+    <textarea name="target_skills" placeholder="Target Skills"></textarea><br>
+    <button type="submit">Generate Learning Plan</button>
+</form>
+
+{% if learning_plan %}
+<hr>
+<h3>Learning Plan</h3>
+<pre>{{ learning_plan }}</pre>
+{% endif %}
+
+</body>
+</html>
