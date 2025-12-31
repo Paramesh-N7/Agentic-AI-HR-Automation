@@ -21,7 +21,7 @@ def test_oauth():
     with open(TOKEN_FILE, "wb") as token:
         pickle.dump(creds, token)
 
-    print("✅ token.pickle created successfully")
+    print("token.pickle created successfully")
 
 if __name__ == "__main__":
     test_oauth()
