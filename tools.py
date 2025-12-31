@@ -18,5 +18,5 @@ def notify_manager(manager_name, manager_email, employee_name):
     )
 
 def complete_onboarding(employee_name):
-    print(f"✅ Onboarding completed for {employee_name}")
+    print(f"Onboarding completed for {employee_name}")
     return {"status": "success"}
